@@ -67,7 +67,7 @@ struct ContentView_Previews: PreviewProvider {
 
 struct FlagImage: View {
     let country: String
-    
+
     var body: some View {
         Image(country)
             .renderingMode(.original)

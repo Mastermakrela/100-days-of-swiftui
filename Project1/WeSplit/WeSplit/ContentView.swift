@@ -24,7 +24,7 @@ struct ContentView: View {
     }
 
     var totalPerPerson: Double { grandTotal / (Double(numberOfPeople) ?? 1) }
-    
+
     var tipIsZero: Bool { tipPercentages[tipPercentage] == 0 }
 
     var body: some View {
