@@ -22,10 +22,10 @@ struct ContentView: View {
         NavigationView {
             switch currentPage {
             case .home: HomeView {
-                questions = $0
-                currentPage = .game
-            }
-            .transition(.slide)
+                    questions = $0
+                    currentPage = .game
+                }
+                .transition(.slide)
 
             case .game:
                 GameView(questions: $questions)
