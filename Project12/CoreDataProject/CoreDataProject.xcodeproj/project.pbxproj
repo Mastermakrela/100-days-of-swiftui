@@ -13,6 +13,8 @@
 		112A9BED256C71960070A856 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112A9BEC256C71960070A856 /* Preview Assets.xcassets */; };
 		112A9BEF256C71960070A856 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9BEE256C71960070A856 /* Persistence.swift */; };
 		112A9BF2256C71960070A856 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 112A9BF0256C71960070A856 /* CoreDataProject.xcdatamodeld */; };
+		112A9BFF256C75480070A856 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9BFD256C75480070A856 /* Movie+CoreDataClass.swift */; };
+		112A9C00256C75480070A856 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9BFE256C75480070A856 /* Movie+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		112A9BEE256C71960070A856 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		112A9BF1256C71960070A856 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		112A9BF3256C71960070A856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112A9BFD256C75480070A856 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		112A9BFE256C75480070A856 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		112A9BE4256C71950070A856 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				112A9BFD256C75480070A856 /* Movie+CoreDataClass.swift */,
+				112A9BFE256C75480070A856 /* Movie+CoreDataProperties.swift */,
 				112A9BE5256C71950070A856 /* CoreDataProjectApp.swift */,
 				112A9BE7256C71950070A856 /* ContentView.swift */,
 				112A9BE9256C71960070A856 /* Assets.xcassets */,
@@ -147,6 +153,8 @@
 				112A9BEF256C71960070A856 /* Persistence.swift in Sources */,
 				112A9BE8256C71950070A856 /* ContentView.swift in Sources */,
 				112A9BF2256C71960070A856 /* CoreDataProject.xcdatamodeld in Sources */,
+				112A9BFF256C75480070A856 /* Movie+CoreDataClass.swift in Sources */,
+				112A9C00256C75480070A856 /* Movie+CoreDataProperties.swift in Sources */,
 				112A9BE6256C71950070A856 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +285,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDataProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 3C75CMFT8S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoreDataProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -284,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mastermakrela.CoreDataProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastermakrela.100-days-of-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDataProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 3C75CMFT8S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CoreDataProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -305,7 +315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mastermakrela.CoreDataProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastermakrela.100-days-of-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
