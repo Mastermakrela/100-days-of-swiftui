@@ -5,8 +5,8 @@
 //  Created by Krzysztof Kostrzewa on 23/11/2020.
 //
 
-import SwiftUI
 import CoreData
+import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc

@@ -6,10 +6,8 @@
 //
 //
 
-import Foundation
 import CoreData
+import Foundation
 
 @objc(Movie)
-public class Movie: NSManagedObject {
-
-}
+public class Movie: NSManagedObject {}

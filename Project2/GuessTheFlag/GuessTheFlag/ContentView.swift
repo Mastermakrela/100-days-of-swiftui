@@ -18,7 +18,7 @@ let labels = [
     "Russia": "Flag with three horizontal stripes of equal size. Top stripe white, middle stripe blue, bottom stripe red",
     "Spain": "Flag with three horizontal stripes. Top thin stripe red, middle thick stripe gold with a crest on the left, bottom thin stripe red",
     "UK": "Flag with overlapping red and white crosses, both straight and diagonally, on a blue background",
-    "US": "Flag with red and white stripes of equal size, with white stars on a blue background in the top-left corner"
+    "US": "Flag with red and white stripes of equal size, with white stars on a blue background in the top-left corner",
 ]
 
 struct ContentView: View {
@@ -88,7 +88,6 @@ struct ContentView: View {
                                 .rotation3DEffect(.degrees(animationAmount2), axis: (x: 1, y: 1, z: 1))
                                 .opacity(animationOpacity2)
                                 .accessibility(label: Text(labels[countries[number], default: "Unknown flag"]))
-
                         }
                     }
                 }

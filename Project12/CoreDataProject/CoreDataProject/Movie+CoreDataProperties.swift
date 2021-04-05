@@ -6,22 +6,17 @@
 //
 //
 
-import Foundation
 import CoreData
+import Foundation
 
-
-extension Movie {
-
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Movie> {
-        return NSFetchRequest<Movie>(entityName: "Movie")
+public extension Movie {
+    @nonobjc class func fetchRequest() -> NSFetchRequest<Movie> {
+        NSFetchRequest<Movie>(entityName: "Movie")
     }
 
-    @NSManaged public var title: String?
-    @NSManaged public var director: String?
-    @NSManaged public var year: Int16
-
+    @NSManaged var title: String?
+    @NSManaged var director: String?
+    @NSManaged var year: Int16
 }
 
-extension Movie : Identifiable {
-
-}
+extension Movie: Identifiable {}

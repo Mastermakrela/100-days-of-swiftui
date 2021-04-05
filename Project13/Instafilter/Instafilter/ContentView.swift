@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var processedImage: UIImage?
 
     @State private var filterIntensity = 0.5
-    @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
+    @State private var currentFilter = CIFilter.sepiaTone()
     let context = CIContext()
 
     var body: some View {
@@ -64,7 +64,7 @@ struct ContentView: View {
                         guard let processedImage = self.processedImage else { return }
 
                         let imageSaver = ImageSaver()
-                        
+
                         imageSaver.successHandler = {
                             print("Success!")
                         }
@@ -72,7 +72,7 @@ struct ContentView: View {
                         imageSaver.errorHandler = {
                             print("Oops: \($0.localizedDescription)")
                         }
-                        
+
                         imageSaver.writeToPhotoAlbum(image: processedImage)
                     }
                 }
@@ -128,8 +128,6 @@ struct ContentView: View {
         loadImage()
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
