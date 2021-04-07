@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showAddSheet = false
-    @Document("people.json") var people
+    @Document("people.json") var people: [Person]
 
     var body: some View {
         NavigationView {

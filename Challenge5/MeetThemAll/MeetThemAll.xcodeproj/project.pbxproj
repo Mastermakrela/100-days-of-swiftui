@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1126EB26261A4A4100D3B4B1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126EB25261A4A4100D3B4B1 /* Person.swift */; };
 		1126EB28261A4BFC00D3B4B1 /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126EB27261A4BFC00D3B4B1 /* AddPersonView.swift */; };
-		113BA1CF261B704900D553A6 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BA1CE261B704900D553A6 /* FileReader.swift */; };
+		113BA1CF261B704900D553A6 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BA1CE261B704900D553A6 /* Document.swift */; };
 		113BA1D1261B926000D553A6 /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BA1D0261B926000D553A6 /* PersonRow.swift */; };
 		113BA1D3261B942F00D553A6 /* PersonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BA1D2261B942F00D553A6 /* PersonPage.swift */; };
 		113BA1D5261B968B00D553A6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BA1D4261B968B00D553A6 /* MapView.swift */; };
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		1126EB25261A4A4100D3B4B1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1126EB27261A4BFC00D3B4B1 /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
-		113BA1CE261B704900D553A6 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		113BA1CE261B704900D553A6 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		113BA1D0261B926000D553A6 /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
 		113BA1D2261B942F00D553A6 /* PersonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPage.swift; sourceTree = "<group>"; };
 		113BA1D4261B968B00D553A6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				113BA5D52618E74200E027DF /* ContentView.swift */,
 				113BA1D2261B942F00D553A6 /* PersonPage.swift */,
 				113BA1D0261B926000D553A6 /* PersonRow.swift */,
-				113BA1CE261B704900D553A6 /* FileReader.swift */,
+				113BA1CE261B704900D553A6 /* Document.swift */,
 				1126EB27261A4BFC00D3B4B1 /* AddPersonView.swift */,
 				113BA1D4261B968B00D553A6 /* MapView.swift */,
 				113BA1D6261BAA6200D553A6 /* LocationFetcher.swift */,
@@ -162,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113BA1CF261B704900D553A6 /* FileReader.swift in Sources */,
+				113BA1CF261B704900D553A6 /* Document.swift in Sources */,
 				113BA5E32618EA3A00E027DF /* ImagePicker.swift in Sources */,
 				113BA1D7261BAA6200D553A6 /* LocationFetcher.swift in Sources */,
 				113BA1D1261B926000D553A6 /* PersonRow.swift in Sources */,
