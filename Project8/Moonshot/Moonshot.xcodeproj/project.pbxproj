@@ -50,8 +50,6 @@
 		1142F70E2558421F00A629D3 = {
 			isa = PBXGroup;
 			children = (
-				1160EFFF25587120003291BC /* MissionView.swift */,
-				1160F00225587746003291BC /* AstronautView.swift */,
 				1142F7192558421F00A629D3 /* Moonshot */,
 				1142F7182558421F00A629D3 /* Products */,
 			);
@@ -68,6 +66,8 @@
 		1142F7192558421F00A629D3 /* Moonshot */ = {
 			isa = PBXGroup;
 			children = (
+				1160EFFF25587120003291BC /* MissionView.swift */,
+				1160F00225587746003291BC /* AstronautView.swift */,
 				1142F72C255846B600A629D3 /* astronauts.json */,
 				1142F72B255846B600A629D3 /* missions.json */,
 				1142F71A2558421F00A629D3 /* MoonshotApp.swift */,

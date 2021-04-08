@@ -12,15 +12,39 @@ struct MissionView: View {
 
     let astronauts: [CrewMember]
 
+    func imageHeight(geo: GeometryProxy) -> CGFloat {
+        let newheight = geo.size.height + (geo.frame(in: .global).minY - 44)
+
+        guard newheight < geo.size.height else {
+            return geo.size.height
+        }
+
+        guard newheight > geo.size.height * 0.2 else {
+            return geo.size.height * 0.2
+        }
+
+        return newheight
+    }
+
     var body: some View {
         GeometryReader { geo in
             ScrollView(.vertical) {
-                VStack {
-                    Image(mission.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: geo.size.width * 0.7)
-                        .padding(.top)
+                VStack(spacing: 0.0) {
+                    GeometryReader { imageGeo in
+                        VStack(alignment: .center) {
+                            Spacer(minLength: 0)
+
+                            Image(mission.image)
+                                .resizable()
+                                .scaledToFit()
+
+                                .frame(height: imageHeight(geo: imageGeo), alignment: .bottom)
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: imageGeo.size.height)
+                    }
+                    .frame(height: geo.size.width * 0.7)
+
+                    .padding(.vertical)
 
                     HStack {
                         Text("Launch Date:")
@@ -30,6 +54,10 @@ struct MissionView: View {
                     .padding([.horizontal, .top])
 
                     Text(mission.description)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding()
+                    Text(mission.description)
+                        .fixedSize(horizontal: false, vertical: true)
                         .padding()
 
                     ForEach(astronauts, id: \.role) { crewMember in
